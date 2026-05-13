@@ -1,0 +1,59 @@
+import { Image, ScrollView, StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+
+export default function StoriesView() {
+    return (
+        <View style={styles.mainContainer}>
+            <Text style={styles.headingText}>Stories</Text>
+
+            <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.cardContentContainer}>
+                <View style={styles.card}>
+                    <Image style={styles.cardImage} source={require('../../assets/images/stories/stories_1.png')} />
+                </View>
+
+                <View style={styles.card}>
+                    <Image style={styles.cardImage} source={require('../../assets/images/stories/stories_2.png')} />
+                </View>
+
+                <View style={styles.card}>
+                    <Image style={styles.cardImage} source={require('../../assets/images/stories/stories_3.png')} />
+                </View>
+
+                <View style={styles.card}>
+                    <Image style={styles.cardImage} source={require('../../assets/images/stories/stories_4.png')} />
+                </View>
+            </ScrollView>
+        </View>
+    )
+}
+
+const styles = StyleSheet.create({
+    mainContainer: {
+        marginTop: 28,
+    },
+    headingText: {
+        color: '#000',
+        fontSize: 21,
+        fontWeight: 'bold',
+        lineHeight: 30,
+        marginBottom: 12,
+    },
+    cardContentContainer: {
+        paddingRight: 20,
+        alignItems: 'flex-start',
+    },
+
+    card: {
+        width: 104,
+        height: 175,
+        borderRadius: 9,
+        overflow: 'hidden',
+        marginRight: 10,
+    },
+    cardImage: {
+        width: '100%',
+        height: '100%',
+        resizeMode: 'cover',
+        borderRadius: 9,
+    },
+})

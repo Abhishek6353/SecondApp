@@ -7,12 +7,15 @@ export default function HeaderView() {
 
             <View style={styles.headerLeftContent}>
 
-                <Image
-                    style={styles.headerProfileImage}
-                    source={{
-                        uri: 'https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8fHx8'
-                    }}
-                />
+                <View style={styles.profileImageContainer}>
+                    <Image
+                        style={styles.cardImage}
+                        source={{
+                            uri: 'https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8fHx8'
+                        }}
+                    />
+                </View>
+
 
                 <TouchableOpacity activeOpacity={0.8}>
                     <View style={styles.myActivityContainer}>
@@ -52,23 +55,26 @@ const styles = StyleSheet.create({
         gap: 15,
     },
 
-    headerProfileImage: {
-        width: 45,
-        height: 45,
-        borderRadius: 22.5,
-
-        borderWidth: 4,
-        borderColor: '#F8F8F8',
+    profileImageContainer: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 30,
+        padding: 5,
+        backgroundColor: '#FFFFFF',
 
         shadowColor: '#000',
         shadowOffset: {
             width: 0,
-            height: 0,
+            height: 5,
         },
         shadowOpacity: 0.16,
-        shadowRadius: 15,
+        shadowRadius: 10,
+    },
 
-        elevation: 4,
+    cardImage: {
+        width: 45,
+        height: 45,
+        borderRadius: 25
     },
 
     myActivityContainer: {

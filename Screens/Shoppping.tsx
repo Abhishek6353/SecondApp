@@ -4,11 +4,12 @@ import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context'
 import HeaderView from '../components/shopping componenets/HeaderView'
 import RecentlyViewed from '../components/shopping componenets/RecentlyViewed'
 import MyOrdersView from '../components/shopping componenets/MyOrdersView'
+import StoriesView from '../components/shopping componenets/StoriesView'
 
 
 export default function Shoppping() {
     return (
-        <SafeAreaProvider >
+        <SafeAreaProvider style={{ backgroundColor: 'white' }}>
             <SafeAreaView>
                 <ScrollView>
                     <View style={styles.container}>
@@ -38,10 +39,11 @@ export default function Shoppping() {
                         </View>
                         <RecentlyViewed />
                         <MyOrdersView />
+                        <StoriesView />
                     </View>
                 </ScrollView>
             </SafeAreaView>
-        </SafeAreaProvider>
+        </SafeAreaProvider >
     )
 }
 

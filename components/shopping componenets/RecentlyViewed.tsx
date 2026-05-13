@@ -22,7 +22,7 @@ export default function RecentlyViewed() {
 
                 <TouchableOpacity style={styles.card} >
                     <Image style={styles.cardImage} source={require('../../assets/images/user_profile_4.png')} />
-                </TouchableOpacity>TouchableOpacity
+                </TouchableOpacity>
 
                 <TouchableOpacity style={styles.card} >
                     <Image style={styles.cardImage} source={require('../../assets/images/user_profile_5.png')} />

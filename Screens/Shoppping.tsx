@@ -5,6 +5,7 @@ import HeaderView from '../components/shopping componenets/HeaderView'
 import RecentlyViewed from '../components/shopping componenets/RecentlyViewed'
 import MyOrdersView from '../components/shopping componenets/MyOrdersView'
 import StoriesView from '../components/shopping componenets/StoriesView'
+import NewItems from '../components/shopping componenets/NewItems'
 
 
 export default function Shoppping() {
@@ -40,6 +41,7 @@ export default function Shoppping() {
                         <RecentlyViewed />
                         <MyOrdersView />
                         <StoriesView />
+                        <NewItems />
                     </View>
                 </ScrollView>
             </SafeAreaView>

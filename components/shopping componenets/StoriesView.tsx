@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
         marginBottom: 12,
     },
     cardContentContainer: {
+        gap: 6,
         paddingRight: 20,
         alignItems: 'flex-start',
     },
@@ -48,12 +49,10 @@ const styles = StyleSheet.create({
         height: 175,
         borderRadius: 9,
         overflow: 'hidden',
-        marginRight: 10,
     },
     cardImage: {
-        width: '100%',
-        height: '100%',
+        width: 104,
+        height: 175,
         resizeMode: 'cover',
-        borderRadius: 9,
     },
 })

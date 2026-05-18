@@ -9,23 +9,23 @@ export default function RecentlyViewed() {
             <View style={styles.cardContainer}>
 
                 <TouchableOpacity style={styles.card} >
-                    <Image style={styles.cardImage} source={require('../../assets/images/user_profile_1.png')} />
+                    <Image style={styles.cardImage} source={require('../../assets/images/userprofile/user_profile_1.png')} />
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.card} >
-                    <Image style={styles.cardImage} source={require('../../assets/images/user_profile_2.png')} />
+                    <Image style={styles.cardImage} source={require('../../assets/images/userprofile/user_profile_2.png')} />
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.card} >
-                    <Image style={styles.cardImage} source={require('../../assets/images/user_profile_3.png')} />
+                    <Image style={styles.cardImage} source={require('../../assets/images/userprofile/user_profile_3.png')} />
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.card} >
-                    <Image style={styles.cardImage} source={require('../../assets/images/user_profile_4.png')} />
+                    <Image style={styles.cardImage} source={require('../../assets/images/userprofile/user_profile_4.png')} />
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.card} >
-                    <Image style={styles.cardImage} source={require('../../assets/images/user_profile_5.png')} />
+                    <Image style={styles.cardImage} source={require('../../assets/images/userprofile/user_profile_5.png')} />
                 </TouchableOpacity>
             </View >
         </View >

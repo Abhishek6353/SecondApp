@@ -1,4 +1,4 @@
-import { Image, ScrollView, StyleSheet, Text, View } from 'react-native'
+import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 
 export default function NewItems() {
@@ -18,45 +18,45 @@ export default function NewItems() {
 
 
             <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.itemContainer}>
-                <View style={styles.itemCard}>
+                <TouchableOpacity style={styles.itemCard}>
                     <View style={styles.itemImageContainer}>
                         <Image style={styles.itemImage} source={require('../../assets/images/newitems/newItem_1.png')} />
                     </View>
                     <Text style={styles.itemName}>Lorem ipsum dolor sit amet consectetur.</Text>
                     <Text style={styles.itemPrice}>$17,00</Text>
-                </View>
+                </TouchableOpacity>
 
-                <View style={styles.itemCard}>
+                <TouchableOpacity style={styles.itemCard}>
                     <View style={styles.itemImageContainer}>
                         <Image style={styles.itemImage} source={require('../../assets/images/newitems/newItem_2.png')} />
                     </View>
                     <Text style={styles.itemName}>Lorem ipsum dolor sit amet consectetur.</Text>
                     <Text style={styles.itemPrice}>$17,00</Text>
-                </View>
+                </TouchableOpacity>
 
-                <View style={styles.itemCard}>
+                <TouchableOpacity style={styles.itemCard}>
                     <View style={styles.itemImageContainer}>
                         <Image style={styles.itemImage} source={require('../../assets/images/newitems/newItem_3.png')} />
                     </View>
                     <Text style={styles.itemName}>Lorem ipsum dolor sit amet consectetur.</Text>
                     <Text style={styles.itemPrice}>$17,00</Text>
-                </View>
+                </TouchableOpacity>
 
-                <View style={styles.itemCard}>
+                <TouchableOpacity style={styles.itemCard}>
                     <View style={styles.itemImageContainer}>
                         <Image style={styles.itemImage} source={require('../../assets/images/newitems/newItem_1.png')} />
                     </View>
                     <Text style={styles.itemName}>Lorem ipsum dolor sit amet consectetur.</Text>
                     <Text style={styles.itemPrice}>$17,00</Text>
-                </View>
+                </TouchableOpacity>
 
-                <View style={styles.itemCard}>
+                <TouchableOpacity style={styles.itemCard}>
                     <View style={styles.itemImageContainer}>
                         <Image style={styles.itemImage} source={require('../../assets/images/newitems/newItem_2.png')} />
                     </View>
                     <Text style={styles.itemName}>Lorem ipsum dolor sit amet consectetur.</Text>
                     <Text style={styles.itemPrice}>$17,00</Text>
-                </View>
+                </TouchableOpacity>
             </ScrollView>
         </View>
     )

@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
+import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 
 export default function Categories() {
@@ -16,7 +16,7 @@ export default function Categories() {
             </View>
 
             <View style={styles.categoryGrid}>
-                <View style={styles.categoryCard}>
+                <TouchableOpacity style={styles.categoryCard}>
                     <View style={styles.categoryImageGrid}>
                         <Image style={styles.categoryImage} source={require('../../assets/images/categories/cloth_1.png')} />
                         <Image style={styles.categoryImage} source={require('../../assets/images/categories/cloth_2.png')} />
@@ -29,9 +29,9 @@ export default function Categories() {
                             <Text style={styles.productCount}>109</Text>
                         </View>
                     </View>
-                </View>
+                </TouchableOpacity>
 
-                <View style={styles.categoryCard}>
+                <TouchableOpacity style={styles.categoryCard}>
                     <View style={styles.categoryImageGrid}>
                         <Image style={styles.categoryImage} source={require('../../assets/images/categories/shoes_1.png')} />
                         <Image style={styles.categoryImage} source={require('../../assets/images/categories/shoes_2.png')} />
@@ -44,9 +44,9 @@ export default function Categories() {
                             <Text style={styles.productCount}>530</Text>
                         </View>
                     </View>
-                </View>
+                </TouchableOpacity>
 
-                <View style={styles.categoryCard}>
+                <TouchableOpacity style={styles.categoryCard}>
                     <View style={styles.categoryImageGrid}>
                         <Image style={styles.categoryImage} source={require('../../assets/images/categories/bags_1.png')} />
                         <Image style={styles.categoryImage} source={require('../../assets/images/categories/bags_2.png')} />
@@ -59,9 +59,9 @@ export default function Categories() {
                             <Text style={styles.productCount}>87</Text>
                         </View>
                     </View>
-                </View>
+                </TouchableOpacity>
 
-                <View style={styles.categoryCard}>
+                <TouchableOpacity style={styles.categoryCard}>
                     <View style={styles.categoryImageGrid}>
                         <Image style={styles.categoryImage} source={require('../../assets/images/categories/lingerie_1.png')} />
                         <Image style={styles.categoryImage} source={require('../../assets/images/categories/lingerie_2.png')} />
@@ -74,7 +74,7 @@ export default function Categories() {
                             <Text style={styles.productCount}>218</Text>
                         </View>
                     </View>
-                </View>
+                </TouchableOpacity>
             </View>
 
 
@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
     categoryCard: {
         backgroundColor: "#FFF",
         borderRadius: 10,
-        padding: 8,
+        padding: 6,
 
         width: '49%',
 
@@ -155,14 +155,15 @@ const styles = StyleSheet.create({
     categoryImageGrid: {
         flexDirection: 'row',
         flexWrap: 'wrap',
-        gap: 10,
+        gap: 6,
         flex: 1,
         justifyContent: 'space-between',
         alignItems: 'center'
     },
 
     categoryImage: {
-        borderRadius: 5
+        width: '48%',
+        borderRadius: 5,
     },
 
     categoryFooter: {

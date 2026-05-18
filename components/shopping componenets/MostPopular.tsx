@@ -1,4 +1,4 @@
-import { Image, ScrollView, StyleSheet, Text, View } from 'react-native'
+import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 
 export default function MostPopular() {
@@ -21,7 +21,7 @@ export default function MostPopular() {
                 horizontal
                 contentContainerStyle={styles.scrollContainer}
             >
-                <View style={styles.outerCard}>
+                <TouchableOpacity style={styles.outerCard}>
                     <View style={styles.cardDetailContainer}>
                         <Image style={styles.cardImage} source={require('../../assets/images/mostpopular/MostPopular_1.png')}></Image>
                         <View style={styles.cardTextContainer}>
@@ -30,9 +30,9 @@ export default function MostPopular() {
                         </View>
 
                     </View>
-                </View>
+                </TouchableOpacity>
 
-                <View style={styles.outerCard}>
+                <TouchableOpacity style={styles.outerCard}>
                     <View style={styles.cardDetailContainer}>
                         <Image style={styles.cardImage} source={require('../../assets/images/mostpopular/MostPopular_2.png')}></Image>
                         <View style={styles.cardTextContainer}>
@@ -41,9 +41,9 @@ export default function MostPopular() {
                         </View>
 
                     </View>
-                </View>
+                </TouchableOpacity>
 
-                <View style={styles.outerCard}>
+                <TouchableOpacity style={styles.outerCard}>
                     <View style={styles.cardDetailContainer}>
                         <Image style={styles.cardImage} source={require('../../assets/images/mostpopular/MostPopular_3.png')}></Image>
                         <View style={styles.cardTextContainer}>
@@ -52,8 +52,8 @@ export default function MostPopular() {
                         </View>
 
                     </View>
-                </View>
-                <View style={styles.outerCard}>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.outerCard}>
                     <View style={styles.cardDetailContainer}>
                         <Image style={styles.cardImage} source={require('../../assets/images/mostpopular/MostPopular_4.png')}></Image>
                         <View style={styles.cardTextContainer}>
@@ -62,9 +62,9 @@ export default function MostPopular() {
                         </View>
 
                     </View>
-                </View>
+                </TouchableOpacity>
 
-                <View style={styles.outerCard}>
+                <TouchableOpacity style={styles.outerCard}>
                     <View style={styles.cardDetailContainer}>
                         <Image style={styles.cardImage} source={require('../../assets/images/mostpopular/MostPopular_1.png')}></Image>
                         <View style={styles.cardTextContainer}>
@@ -73,9 +73,9 @@ export default function MostPopular() {
                         </View>
 
                     </View>
-                </View>
+                </TouchableOpacity>
 
-                <View style={styles.outerCard}>
+                <TouchableOpacity style={styles.outerCard}>
                     <View style={styles.cardDetailContainer}>
                         <Image style={styles.cardImage} source={require('../../assets/images/mostpopular/MostPopular_2.png')}></Image>
                         <View style={styles.cardTextContainer}>
@@ -84,9 +84,9 @@ export default function MostPopular() {
                         </View>
 
                     </View>
-                </View>
+                </TouchableOpacity>
 
-                <View style={styles.outerCard}>
+                <TouchableOpacity style={styles.outerCard}>
                     <View style={styles.cardDetailContainer}>
                         <Image style={styles.cardImage} source={require('../../assets/images/mostpopular/MostPopular_3.png')}></Image>
                         <View style={styles.cardTextContainer}>
@@ -95,8 +95,8 @@ export default function MostPopular() {
                         </View>
 
                     </View>
-                </View>
-                <View style={styles.outerCard}>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.outerCard}>
                     <View style={styles.cardDetailContainer}>
                         <Image style={styles.cardImage} source={require('../../assets/images/mostpopular/MostPopular_4.png')}></Image>
                         <View style={styles.cardTextContainer}>
@@ -105,7 +105,7 @@ export default function MostPopular() {
                         </View>
 
                     </View>
-                </View>
+                </TouchableOpacity>
             </ScrollView>
         </View>
     )

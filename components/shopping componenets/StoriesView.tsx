@@ -1,4 +1,4 @@
-import { Image, ScrollView, StyleSheet, Text, View } from 'react-native'
+import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 
 export default function StoriesView() {
@@ -7,21 +7,21 @@ export default function StoriesView() {
             <Text style={styles.headingText}>Stories</Text>
 
             <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.cardContentContainer}>
-                <View style={styles.card}>
+                <TouchableOpacity style={styles.card}>
                     <Image style={styles.cardImage} source={require('../../assets/images/stories/stories_1.png')} />
-                </View>
+                </TouchableOpacity>
 
-                <View style={styles.card}>
+                <TouchableOpacity style={styles.card}>
                     <Image style={styles.cardImage} source={require('../../assets/images/stories/stories_2.png')} />
-                </View>
+                </TouchableOpacity>
 
-                <View style={styles.card}>
+                <TouchableOpacity style={styles.card}>
                     <Image style={styles.cardImage} source={require('../../assets/images/stories/stories_3.png')} />
-                </View>
+                </TouchableOpacity>
 
-                <View style={styles.card}>
+                <TouchableOpacity style={styles.card}>
                     <Image style={styles.cardImage} source={require('../../assets/images/stories/stories_4.png')} />
-                </View>
+                </TouchableOpacity>
             </ScrollView>
         </View>
     )

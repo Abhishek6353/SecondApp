@@ -44,6 +44,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         lineHeight: 30,
         marginBottom: 10,
+        paddingHorizontal: 20,
     },
 
     cardContainer: {
@@ -51,6 +52,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         flexWrap: 'wrap',
         gap: 10,
+        paddingHorizontal: 20,
     },
 
     card: {

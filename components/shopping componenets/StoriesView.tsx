@@ -37,11 +37,13 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         lineHeight: 30,
         marginBottom: 12,
+        paddingHorizontal: 20,
     },
     cardContentContainer: {
         gap: 6,
         paddingRight: 20,
         alignItems: 'flex-start',
+        paddingHorizontal: 20,
     },
 
     card: {

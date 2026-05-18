@@ -34,12 +34,14 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         lineHeight: 30,
         marginBottom: 10,
+        paddingHorizontal: 20,
     },
 
     cardContainer: {
         flexDirection: 'row',
         width: '100%',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        paddingHorizontal: 20,
     },
 
     card: {

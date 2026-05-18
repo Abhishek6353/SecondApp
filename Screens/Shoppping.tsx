@@ -51,7 +51,7 @@ export default function Shoppping() {
 
 const styles = StyleSheet.create({
     container: {
-        paddingHorizontal: 20,
+        // paddingHorizontal: 20,
         paddingTop: 27,
         paddingBottom: 30
     },
@@ -61,10 +61,10 @@ const styles = StyleSheet.create({
         fontSize: 28,
         fontWeight: 'bold',
         marginTop: 20,
+        paddingHorizontal: 20,
     },
 
     announcementContainer: {
-        width: '100%',
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'flex-end',
@@ -73,8 +73,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#F8F8F8',
 
         borderRadius: 18,
-        paddingHorizontal: 18,
-        paddingVertical: 18,
+        padding: 18,
+        marginHorizontal: 20
     },
     announcementTextContainer: {
         flex: 1,

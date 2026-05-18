@@ -20,7 +20,7 @@ export default function NewItems() {
             <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.itemContainer}>
                 <View style={styles.itemCard}>
                     <View style={styles.itemImageContainer}>
-                        <Image style={styles.itemImage} source={require('../../assets/images/user_profile_1.png')} />
+                        <Image style={styles.itemImage} source={require('../../assets/images/newitems/newItem_1.png')} />
                     </View>
                     <Text style={styles.itemName}>Lorem ipsum dolor sit amet consectetur.</Text>
                     <Text style={styles.itemPrice}>$17,00</Text>
@@ -28,7 +28,7 @@ export default function NewItems() {
 
                 <View style={styles.itemCard}>
                     <View style={styles.itemImageContainer}>
-                        <Image style={styles.itemImage} source={require('../../assets/images/user_profile_1.png')} />
+                        <Image style={styles.itemImage} source={require('../../assets/images/newitems/newItem_2.png')} />
                     </View>
                     <Text style={styles.itemName}>Lorem ipsum dolor sit amet consectetur.</Text>
                     <Text style={styles.itemPrice}>$17,00</Text>
@@ -36,7 +36,7 @@ export default function NewItems() {
 
                 <View style={styles.itemCard}>
                     <View style={styles.itemImageContainer}>
-                        <Image style={styles.itemImage} source={require('../../assets/images/user_profile_1.png')} />
+                        <Image style={styles.itemImage} source={require('../../assets/images/newitems/newItem_3.png')} />
                     </View>
                     <Text style={styles.itemName}>Lorem ipsum dolor sit amet consectetur.</Text>
                     <Text style={styles.itemPrice}>$17,00</Text>
@@ -44,7 +44,7 @@ export default function NewItems() {
 
                 <View style={styles.itemCard}>
                     <View style={styles.itemImageContainer}>
-                        <Image style={styles.itemImage} source={require('../../assets/images/user_profile_1.png')} />
+                        <Image style={styles.itemImage} source={require('../../assets/images/newitems/newItem_1.png')} />
                     </View>
                     <Text style={styles.itemName}>Lorem ipsum dolor sit amet consectetur.</Text>
                     <Text style={styles.itemPrice}>$17,00</Text>
@@ -52,7 +52,7 @@ export default function NewItems() {
 
                 <View style={styles.itemCard}>
                     <View style={styles.itemImageContainer}>
-                        <Image style={styles.itemImage} source={require('../../assets/images/user_profile_1.png')} />
+                        <Image style={styles.itemImage} source={require('../../assets/images/newitems/newItem_2.png')} />
                     </View>
                     <Text style={styles.itemName}>Lorem ipsum dolor sit amet consectetur.</Text>
                     <Text style={styles.itemPrice}>$17,00</Text>
@@ -71,6 +71,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
+        paddingHorizontal: 20,
     },
 
     headingText: {
@@ -106,7 +107,7 @@ const styles = StyleSheet.create({
     // Items Container
     itemContainer: {
         marginTop: 10,
-        paddingHorizontal: 5,
+        paddingHorizontal: 20,
         gap: 6
     },
 
@@ -124,7 +125,7 @@ const styles = StyleSheet.create({
         shadowColor: '#000',
         shadowOffset: {
             width: 0,
-            height: 5,
+            height: 3,
         },
         shadowOpacity: 0.16,
         shadowRadius: 10,
@@ -144,6 +145,7 @@ const styles = StyleSheet.create({
 
     },
     itemPrice: {
+        marginTop: 5,
         fontSize: 17,
         lineHeight: 21,
         fontWeight: 'bold',

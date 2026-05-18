@@ -56,10 +56,10 @@ const styles = StyleSheet.create({
     },
 
     card: {
-        flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        // height: 60,
+        height: 60,
+        width: 60,
         borderRadius: 30,
         padding: 5,
         backgroundColor: '#FFFFFF',

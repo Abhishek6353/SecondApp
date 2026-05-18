@@ -41,20 +41,23 @@ const styles = StyleSheet.create({
     },
     cardContentContainer: {
         gap: 6,
-        paddingRight: 20,
-        alignItems: 'flex-start',
         paddingHorizontal: 20,
     },
 
     card: {
         width: 104,
         height: 175,
-        borderRadius: 9,
+        borderRadius: 10,
         overflow: 'hidden',
+        backgroundColor: 'red',
+        flex: 1,
+        alignItems: 'center',
+
     },
     cardImage: {
-        width: 104,
+        width: 135,
         height: 175,
         resizeMode: 'cover',
+        borderRadius: 10,
     },
 })
